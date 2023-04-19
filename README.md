@@ -1,4 +1,4 @@
-#1. Data preprocessing
+# 1. Data preprocessing
 The model in this project is for the binary task, so two sets of pictures of different categories need to be named as follows:
 ```code
 First class: n(no. of picture)
