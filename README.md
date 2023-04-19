@@ -83,3 +83,6 @@ Python SVM.py
 
 # 4. GUI
 Running GUI.py will open the front-end interface we designed. For the operation using GUI, you can check the demo video.
+```bash
+Python GUI.py
+```
