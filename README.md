@@ -56,6 +56,9 @@ The best result of training will be saved as **/TrainedModel/Resnet.pth** and tr
 
 After training, a line graph of loss function and accuracy will be automatically generated, and the running time of the program will be displayed at the same time.
 
+* Due to the size limitation of github warehouse, we saved a set of trained models in [Google drive](https://drive.google.com/drive/folders/18wqeMtLIJrMXNqCImAOTXEQkuBazCj3O?usp=share_link)
+  , which can be downloaded to **/TrainedModel/** through the link.
+
 Test model: **/TrainedModel/VGGnet.pth**
 ```bash
 Python VGGTest.py
@@ -73,7 +76,6 @@ python .\grid_search.py --algorithm_type 1
 ```
 _algorithm_type_ : 0 represent Resnet model and 1 represent VGGnet model.
 Best model will be saved in /Best_model.
-
 
 ### SVM
 Different from neural network model. For the SVM algorithm, just run SVM.py directly to complete train and test.
