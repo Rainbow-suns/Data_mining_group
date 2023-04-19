@@ -5,20 +5,20 @@ First class: n(no. of picture)
 Second class: t(no. of picture)
 ```
 And place the image in the corresponding folder according to the different model you want to run:
-###VGGnet & ResNet
+### VGGnet & ResNet
 The training dataset, valid dataset and the test dataset are placed in **data/train/**, **data/valid/**  and **data/test/** separately. You no longer need to put images in different folders by category.
 
-###SVM
+### SVM
 The training dataset and the test dataset are placed in **data/raw_data/train/** and **data/raw_data/test/** separately, and divide the images into two folders by different categories.
 
-###Image format
+### Image format
 In this project, the size of all images needs to be **256 x 256**. You can run the following code to resize all the images in a folder:
 ```bash
 python transfer.py --folder_path Folder_path --size 256
 ```
 _Folder_path_ is the path to the folder where you store your images.
 
-#2. Running Environment
+# 2. Running Environment
 It is recommended to use IntelliJ IDEA Community Edition 2022.2.3 to run the code of this project. After opening IDEA, use the python3.9 version, choose to let IDEA automatically download the missing packages, and then IDEA will automatically download the packages required by the program, and most packages can be installed directly.
 For Pytorch packages, manual download is required.
 
@@ -40,8 +40,8 @@ The packages required for this project are as follows:
 
 Once installed, you can run the code.
 
-#3. Training & Test
-###VGGnet & ResNet
+# 3. Training & Test
+### VGGnet & ResNet
 Training VGG model:
 ```bash
 Python VGGTrain.py
@@ -66,7 +66,7 @@ Python ResnetTest.py
 ```
 After testing, a confusion matrix diagram will be generated.
 
-###Grid search
+### Grid search
 To find the best suitable combination of learning rate and batch size, grid search can be used:
 ```bash
 python .\grid_search.py --algorithm_type 1
@@ -75,11 +75,11 @@ _algorithm_type_ : 0 represent Resnet model and 1 represent VGGnet model.
 Best model will be saved in /Best_model.
 
 
-###SVM
+### SVM
 Different from neural network model. For the SVM algorithm, just run SVM.py directly to complete train and test.
 ```bash
 Python SVM.py
 ```
 
-#4. GUI
+# 4. GUI
 Running GUI.py will open the front-end interface we designed. For the operation using GUI, you can check the demo video.
